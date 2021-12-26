@@ -1,0 +1,22 @@
+[package]
+name = "yugabyte"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = "3.3"
+diesel = { version = "1.4", features = ["postgres", "r2d2", "chrono", "uuidv07"] }
+uuid = { version = "=0.8", features = ["serde", "v4"] }
+chrono = { version = "0.4", features = ["serde"] }
+paperclip = { version = "0.5.0", features = ["actix-nightly", "uuid", "chrono"] }
+serde = { version = "1.0", features = ["derive"] }
+dotenv = "0.15"
+dotenv_codegen = "0.15"
+futures-util = "0.3.15"
+actix-identity = "0.3"
+regex = "1"
+lazy_static = "1.4"
+validator = { version = "0.12", features = ["derive"] }
+diesel_migrations = "1.4.0"
