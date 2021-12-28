@@ -7,6 +7,8 @@ To create the docker image for yugabyte database, you can run those commands:
 
 Then check that it is created by this command 'docker ps'
 
+You need also to create the Postgres db.
+
 To init the database, you can use this command 'diesel setup' in the cmd in this path: yugabyte/migration
 
 Then, use the APIs
